@@ -14,6 +14,13 @@
 		163E06D525CDBA4C0024895B /* JsonParsing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 163E06D325CDBA4C0024895B /* JsonParsing.xcdatamodeld */; };
 		163E06D725CDBA4E0024895B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163E06D625CDBA4E0024895B /* Assets.xcassets */; };
 		163E06DA25CDBA4E0024895B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163E06D825CDBA4E0024895B /* LaunchScreen.storyboard */; };
+		163E06E725CDBB330024895B /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163E06E625CDBB330024895B /* JSONData.swift */; };
+		163E06EA25CDBB8F0024895B /* JSONManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163E06E925CDBB8F0024895B /* JSONManger.swift */; };
+		16C7BF4625CE98EF00344781 /* JSONProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7BF4525CE98EF00344781 /* JSONProtocol.swift */; };
+		16C7BF4A25CE9A0300344781 /* JSONViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7BF4825CE9A0300344781 /* JSONViewCell.swift */; };
+		16C7BF4B25CE9A0300344781 /* JSONViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C7BF4925CE9A0300344781 /* JSONViewCell.xib */; };
+		16C7BF5025CEA6D000344781 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7BF4E25CEA6D000344781 /* DetailViewController.swift */; };
+		16C7BF5125CEA6D000344781 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C7BF4F25CEA6D000344781 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		163E06D625CDBA4E0024895B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163E06D925CDBA4E0024895B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		163E06DB25CDBA4E0024895B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		163E06E625CDBB330024895B /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
+		163E06E925CDBB8F0024895B /* JSONManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManger.swift; sourceTree = "<group>"; };
+		16C7BF4525CE98EF00344781 /* JSONProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONProtocol.swift; sourceTree = "<group>"; };
+		16C7BF4825CE9A0300344781 /* JSONViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewCell.swift; sourceTree = "<group>"; };
+		16C7BF4925CE9A0300344781 /* JSONViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JSONViewCell.xib; sourceTree = "<group>"; };
+		16C7BF4E25CEA6D000344781 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		16C7BF4F25CEA6D000344781 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,63 @@
 		163E06C925CDBA4B0024895B /* JsonParsing */ = {
 			isa = PBXGroup;
 			children = (
+				16C7BF4425CE98DF00344781 /* Protocol */,
+				163E06E525CDBB1C0024895B /* Apis */,
+				163E06E425CDBB120024895B /* Controller */,
+				163E06E325CDBB080024895B /* View */,
+				163E06E225CDBAFF0024895B /* Model */,
 				163E06CA25CDBA4B0024895B /* AppDelegate.swift */,
 				163E06CC25CDBA4B0024895B /* SceneDelegate.swift */,
-				163E06CE25CDBA4B0024895B /* ViewController.swift */,
-				163E06D025CDBA4B0024895B /* Main.storyboard */,
 				163E06D625CDBA4E0024895B /* Assets.xcassets */,
 				163E06D825CDBA4E0024895B /* LaunchScreen.storyboard */,
 				163E06DB25CDBA4E0024895B /* Info.plist */,
 				163E06D325CDBA4C0024895B /* JsonParsing.xcdatamodeld */,
 			);
 			path = JsonParsing;
+			sourceTree = "<group>";
+		};
+		163E06E225CDBAFF0024895B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				163E06E625CDBB330024895B /* JSONData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		163E06E325CDBB080024895B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16C7BF4F25CEA6D000344781 /* DetailViewController.xib */,
+				163E06D025CDBA4B0024895B /* Main.storyboard */,
+				16C7BF4825CE9A0300344781 /* JSONViewCell.swift */,
+				16C7BF4925CE9A0300344781 /* JSONViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		163E06E425CDBB120024895B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				163E06CE25CDBA4B0024895B /* ViewController.swift */,
+				16C7BF4E25CEA6D000344781 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		163E06E525CDBB1C0024895B /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				163E06E925CDBB8F0024895B /* JSONManger.swift */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
+		16C7BF4425CE98DF00344781 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				16C7BF4525CE98EF00344781 /* JSONProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +190,8 @@
 			files = (
 				163E06DA25CDBA4E0024895B /* LaunchScreen.storyboard in Resources */,
 				163E06D725CDBA4E0024895B /* Assets.xcassets in Resources */,
+				16C7BF5125CEA6D000344781 /* DetailViewController.xib in Resources */,
+				16C7BF4B25CE9A0300344781 /* JSONViewCell.xib in Resources */,
 				163E06D225CDBA4B0024895B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,10 +203,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C7BF5025CEA6D000344781 /* DetailViewController.swift in Sources */,
 				163E06CF25CDBA4B0024895B /* ViewController.swift in Sources */,
+				16C7BF4625CE98EF00344781 /* JSONProtocol.swift in Sources */,
+				16C7BF4A25CE9A0300344781 /* JSONViewCell.swift in Sources */,
 				163E06CB25CDBA4B0024895B /* AppDelegate.swift in Sources */,
+				163E06E725CDBB330024895B /* JSONData.swift in Sources */,
 				163E06D525CDBA4C0024895B /* JsonParsing.xcdatamodeld in Sources */,
 				163E06CD25CDBA4B0024895B /* SceneDelegate.swift in Sources */,
+				163E06EA25CDBB8F0024895B /* JSONManger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
